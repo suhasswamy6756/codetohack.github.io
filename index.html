@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&family=Zen+Dots&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="a" class="logo"><u>NMIT</u></a>
+        <ul >
+            <li><a href="#" class="home">HOME</a></li>
+            <li><a href="#" class="home">ABOUT</a></li>
+            <li><a href="#" class="home">WORK</a></li>
+            <li><a href="#" class="home">CONTACT</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="stars.png" id="stars">
+       
+        <img src="Screenshot__2_-removebg-preview.png" id="moon">
+        <h2 id="text">HACK</h2>
+        <h2 id="club">CLUB</h2>
+        <a href="sec" id="btn">Join the Club </a>
+        <img src="mountains_behind.png" id="mountains_behind">
+        <img src="mountains_front.png" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+        <h2>HACKATHON</h2>
+        <p> Some 100 random words - Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rem illum qui fugiat eligendi esse nobis. Iste blanditiis,<br> voluptates corporis impedit dignissimos ipsam soluta repellat cupiditate eaque illum voluptatum deserunt placeat explicabo perspiciatis in totam ducimus necessitatibus nesciunt nobis consequuntur quam unde quas ea minima.<br> Voluptatem quidem eligendi, amet impedit nisi quas tenetur qui pariatur earum beatae? Officiis ad modi animi earum iste. Ullam quasi<br> fugit voluptatibus dolore quidem rem at pariatur, cupiditate quo, error harum odio aut natus quibusdam sapiente ab. Commodi eligendi perferendis nostrum ipsam aperiam, quaerat dolorum reprehenderit rerum esse sunt corrupti quisquam hic assumenda aut expedita.</p>
+    </div>
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let mountains_front = document.getElementById('mountains_front');
+        let header = document.queryCommandIndeterm('header');
+
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+            stars.style.left = value *1.25 + 'px';
+            moon.style.top = value *0.75 + 'px';
+            mountains_behind.style.top = value *0.5 + 'px';
+            mountains_front.style.top = value *0 + 'px';
+            club.style.marginLeft = value *+0.7 + 'px';
+            club.style.marginTop = value *0.7 + 'px';
+            text.style.marginLeft = value *-0.5 + 'px';
+            text.style.marginTop = value *0.7 + 'px';
+            btn.style.marginTop = value *0.3 + 'px';
+            header.style.top = value * 0.3 + 'px';
+           
+        })
+    </script>
+    <footer>
+        <div class="container">
+        
+            <div  class="card">
+                <img src="sponsor logo.png" alt="sponsors">
+                <div class="intro">
+                    <h1>&nbspSPONSORSHIPS</h1>
+                </div>
+            </div>
+        
+        
+            <div  class="card">
+                <img src="supporter logo.jpg" alt="sponsors">
+                <div class="intro">
+                    <h1>&nbsp&nbspSUPPORTERS</h1>
+                </div>
+            </div>
+        
+        
+            <div  class="card">
+                <img src="achivement logo.jpg" alt="sponsors">
+                <div class="intro">
+                    <h1>&nbspACHIEVEMENTS</h1>
+                </div>
+        
+        </div>
+    </footer>
+</body>
+</html>
